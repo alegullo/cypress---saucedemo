@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="20.045" tests="5" failures="2">
+  <testsuite name="Root Suite" timestamp="2025-06-12T15:17:40" tests="0" file="cypress\e2e\login.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Login Page" timestamp="2025-06-12T15:17:40" tests="5" time="20.044" failures="2">
+    <testcase name="Login Page Login com usuário: standard_user" time="1.347" classname="Login com usuário: standard_user">
+    </testcase>
+    <testcase name="Login Page Login com usuário: invalid_user" time="0.000" classname="Login com usuário: invalid_user">
+      <failure message="Timed out retrying after 4000ms: expected &apos;https://www.saucedemo.com/&apos; to include &apos;/inventory.html&apos;" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: expected 'https://www.saucedemo.com/' to include '/inventory.html'
+    at Context.eval (webpack:///./cypress/support/commands.js:33:11)
+    at wrapped (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:141516:43)]]></failure>
+    </testcase>
+    <testcase name="Login Page Login com usuário: locked_out_user" time="0.000" classname="Login com usuário: locked_out_user">
+      <failure message="Timed out retrying after 4000ms: expected &apos;https://www.saucedemo.com/&apos; to include &apos;/inventory.html&apos;" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: expected 'https://www.saucedemo.com/' to include '/inventory.html'
+    at Context.eval (webpack:///./cypress/support/commands.js:33:11)
+    at wrapped (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:141516:43)]]></failure>
+    </testcase>
+    <testcase name="Login Page Login com usuário: problem_user" time="1.157" classname="Login com usuário: problem_user">
+    </testcase>
+    <testcase name="Login Page Login com usuário: performance_glitch_user" time="6.243" classname="Login com usuário: performance_glitch_user">
+    </testcase>
+  </testsuite>
+</testsuites>
