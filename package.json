@@ -1,5 +1,10 @@
 {
   "devDependencies": {
     "cypress": "^14.4.1"
+  },
+
+  "scripts": {
+    "cy:open:chrome": "npx cypress open --browser chrome",
+    "cy:run:chrome": "npx cypress run --browser chrome"
   }
 }
