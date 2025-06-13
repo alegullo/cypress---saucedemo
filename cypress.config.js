@@ -1,5 +1,4 @@
-const cypress = require("cypress");
-const { defineConfig } = require("cypress");
+const {defineConfig} = require("cypress")
 
 module.exports = defineConfig({
   reporter:'cypress-multi-reporters',
@@ -18,6 +17,7 @@ module.exports = defineConfig({
   },
   chromeWebSecurity: false,
   e2e: {
+    baseUrl: 'https://www.saucedemo.com/',
     setupNodeEvents(on, config) {
       require('cypress-mochawesome-reporter/plugin')(on);
     },

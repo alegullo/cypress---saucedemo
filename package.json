@@ -7,6 +7,8 @@
   },
   "scripts": {
     "cy:open:chrome": "npx cypress open --browser chrome",
-    "cy:run:chrome": "npx cypress run --browser chrome"
+    "cy:run:chrome": "npx cypress run --browser chrome",
+    "cy:open:dev": "npx cypress open --config-file cypress-dev.json --browser chrome",
+    "cy:open:qa": "npx cypress open --config-file cypress-qa.json --browser chrome"
   }
 }
